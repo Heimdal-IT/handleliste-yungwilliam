@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <div id="liste"></div>
+    
+</body>
+
+<script>
+    let handleliste = ["Epler", "Appelsiner", "Sjokolade", "Sjokomelk"];
+    handleliste[4] = "Skinke";
+    handleliste.push("Smør");
+    handleliste[3] = "Litago jordbær";
+    
+    handleliste.pop();
+    
+    console.log(handleliste.indexOf("Vaskemiddel"));
+    
+    
+
+    /*
+
+    */
+    
+    let listeDiv = document.getElementById("liste");
+    
+        for(let i = 0; i<handleliste.length; i++){
+            
+            listeDiv.innerHTML += handleliste[i] + "<br>";
+    }
+ 
+    
+    
+</script>
+
+</html>
